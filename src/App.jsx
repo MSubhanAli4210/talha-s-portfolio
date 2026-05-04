@@ -18,7 +18,7 @@ export default function App() {
     <div className="min-h-screen bg-[#f4f1ea] text-[#111111] font-sans">
       {/* Navbar */}
       <header className="w-full px-6 md:px-14 py-6 flex items-center justify-between sticky top-0 z-50 bg-[#f4f1ea]/90 backdrop-blur border-b border-black/10">
-        <h1 className="text-xl md:text-2xl font-bold tracking-tight">Abhishek Studio</h1>
+        <h1 className="text-xl md:text-2xl font-bold tracking-tight">Talha's Studio</h1>
         <nav className="hidden md:flex items-center gap-8 text-sm font-medium uppercase tracking-wide">
           <a href="#work" className="hover:opacity-60 transition">Work</a>
           <a href="#about" className="hover:opacity-60 transition">About</a>
