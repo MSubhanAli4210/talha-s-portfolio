@@ -1,109 +1,106 @@
 export default function App() {
-  const services = [
-    "Brand Identity Design",
-    "Logo & Packaging",
-    "Social Media Creatives",
-    "Brochures & Flyers",
-    "Business Cards & Stationery",
-    "Offset & Digital Printing",
-    "Large Format Printing",
-    "Custom Merchandise"
-  ];
-
-  const projects = [
+  const portfolioItems = [
     {
-      title: "Modern Brand Identity",
+      title: "Brand Identity",
       category: "Branding",
-      description: "Complete visual identity system including logo, stationery, and brand guidelines for a premium business client."
+      image: "/placeholder-1.jpg"
     },
     {
-      title: "Product Packaging Design",
+      title: "Packaging Design",
       category: "Packaging",
-      description: "Eye-catching packaging designed for shelf impact and printed with premium finishing."
+      image: "/placeholder-2.jpg"
     },
     {
-      title: "Corporate Print Suite",
+      title: "Social Campaign",
+      category: "Social Media",
+      image: "/placeholder-3.jpg"
+    },
+    {
+      title: "Print Collateral",
       category: "Printing",
-      description: "Business cards, brochures, and presentation folders printed with premium quality stock."
+      image: "/placeholder-4.jpg"
     },
     {
-      title: "Social Media Campaign",
-      category: "Digital Design",
-      description: "High-converting social media creatives designed for marketing campaigns and promotions."
+      title: "Poster Design",
+      category: "Advertising",
+      image: "/placeholder-5.jpg"
+    },
+    {
+      title: "Editorial Layout",
+      category: "Magazine",
+      image: "/placeholder-6.jpg"
     }
   ];
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-[#fff8f2] via-[#fdf4ff] to-[#eef7ff] text-gray-900 font-sans">
-      {/* Hero Section */}
-      <section className="px-6 md:px-16 py-20 bg-gradient-to-br from-[#fff1e6] via-[#fce7f3] to-[#e0f2fe]">
-        <div className="max-w-6xl mx-auto grid md:grid-cols-2 gap-10 items-center">
+    <div className="min-h-screen bg-[#f8f6f1] text-[#111111] font-sans">
+      {/* Navbar */}
+      <header className="w-full px-6 md:px-14 py-6 flex items-center justify-between border-b border-black/10 sticky top-0 bg-[#f8f6f1]/90 backdrop-blur z-50">
+        <h1 className="text-xl md:text-2xl font-bold tracking-tight">Studiofolio</h1>
+        <nav className="hidden md:flex items-center gap-8 text-sm font-medium">
+          <a href="#work" className="hover:opacity-60 transition">Work</a>
+          <a href="#about" className="hover:opacity-60 transition">About</a>
+          <a href="#contact" className="hover:opacity-60 transition">Contact</a>
+        </nav>
+      </header>
+
+      {/* Hero */}
+      <section className="px-6 md:px-14 pt-16 pb-12">
+        <div className="max-w-7xl mx-auto grid lg:grid-cols-2 gap-10 items-end">
           <div>
-            <p className="text-sm uppercase tracking-[0.25em] text-fuchsia-600 mb-4">Creative Studio & Print House</p>
-            <h1 className="text-4xl md:text-6xl font-bold leading-tight mb-6 text-gray-900">
-              Design That Speaks. <br />
-              Print That Lasts.
+            <p className="uppercase text-xs tracking-[0.3em] text-black/50 mb-4">Graphic Designer • Print Studio</p>
+            <h1 className="text-5xl md:text-7xl font-bold leading-[0.95] tracking-tight mb-6">
+              Bold Visuals <br />
+              for Modern Brands
             </h1>
-            <p className="text-lg text-gray-700 mb-8 leading-relaxed">
-              We craft impactful graphic designs and deliver premium-quality printing solutions for businesses that want to stand out.
+            <p className="text-base md:text-lg text-black/60 max-w-xl leading-relaxed mb-8">
+              A minimal portfolio template for graphic designers and printing studios. Clean layouts, strong typography, and image-first presentation.
             </p>
-            <div className="flex flex-wrap gap-4">
-              <button className="px-6 py-3 rounded-2xl bg-gradient-to-r from-fuchsia-600 to-orange-500 text-white font-medium shadow-lg hover:scale-105 transition">
-                View Portfolio
+            <div className="flex gap-4">
+              <button className="px-6 py-3 bg-black text-white rounded-full text-sm font-medium hover:scale-105 transition">
+                View Work
               </button>
-              <button className="px-6 py-3 rounded-2xl border border-fuchsia-200 bg-white/80 font-medium hover:bg-white transition">
-                Get a Quote
+              <button className="px-6 py-3 border border-black rounded-full text-sm font-medium hover:bg-black hover:text-white transition">
+                Get in Touch
               </button>
             </div>
           </div>
 
-          <div className="grid grid-cols-2 gap-4">
-            <div className="rounded-3xl bg-gradient-to-br from-fuchsia-600 to-pink-500 text-white p-6 shadow-xl">
-              <h3 className="text-3xl font-bold">250+</h3>
-              <p className="text-sm text-pink-100 mt-2">Projects Delivered</p>
-            </div>
-            <div className="rounded-3xl bg-gradient-to-br from-cyan-100 to-sky-200 p-6 shadow-xl border border-cyan-200">
-              <h3 className="text-3xl font-bold text-sky-900">100+</h3>
-              <p className="text-sm text-sky-700 mt-2">Happy Clients</p>
-            </div>
-            <div className="rounded-3xl bg-white/80 backdrop-blur p-6 shadow-xl border border-white col-span-2">
-              <h3 className="text-2xl font-semibold mb-2 text-gray-900">Creative Design + Professional Printing</h3>
-              <p className="text-gray-600 text-sm">From concept to print, we handle the full creative process with precision and style.</p>
+          <div>
+            <div className="aspect-[4/5] rounded-[2rem] overflow-hidden bg-white border border-black/10">
+              <img src="/hero-placeholder.jpg" alt="Hero" className="w-full h-full object-cover" />
             </div>
           </div>
         </div>
       </section>
 
-      {/* Services */}
-      <section className="px-6 md:px-16 py-20">
-        <div className="max-w-6xl mx-auto">
-          <div className="mb-12">
-            <p className="text-sm uppercase tracking-[0.25em] text-orange-500 mb-3">Services</p>
-            <h2 className="text-3xl md:text-4xl font-bold">What We Do</h2>
+      {/* Portfolio Grid */}
+      <section id="work" className="px-6 md:px-14 py-14">
+        <div className="max-w-7xl mx-auto">
+          <div className="flex items-end justify-between mb-10">
+            <div>
+              <p className="uppercase text-xs tracking-[0.3em] text-black/50 mb-3">Selected Work</p>
+              <h2 className="text-3xl md:text-5xl font-bold tracking-tight">Portfolio</h2>
+            </div>
           </div>
-          <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-5">
-            {services.map((service, i) => (
-              <div key={i} className="p-5 rounded-2xl bg-white/80 backdrop-blur border border-white shadow-md hover:shadow-xl hover:-translate-y-1 transition">
-                <h3 className="font-semibold text-lg text-gray-800">{service}</h3>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
 
-      {/* Portfolio */}
-      <section className="px-6 md:px-16 py-20 bg-gradient-to-r from-[#fff7ed] via-[#fdf2f8] to-[#eff6ff]">
-        <div className="max-w-6xl mx-auto">
-          <div className="mb-12">
-            <p className="text-sm uppercase tracking-[0.25em] text-fuchsia-600 mb-3">Portfolio</p>
-            <h2 className="text-3xl md:text-4xl font-bold">Selected Work</h2>
-          </div>
-          <div className="grid md:grid-cols-2 gap-6">
-            {projects.map((project, i) => (
-              <div key={i} className="bg-white/90 backdrop-blur p-6 rounded-3xl shadow-md hover:shadow-2xl hover:-translate-y-1 transition border border-white">
-                <p className="text-sm text-orange-500 mb-2">{project.category}</p>
-                <h3 className="text-xl font-semibold mb-3">{project.title}</h3>
-                <p className="text-gray-600 leading-relaxed">{project.description}</p>
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+            {portfolioItems.map((item, i) => (
+              <div key={i} className="group cursor-pointer">
+                <div className="aspect-[4/5] rounded-[1.8rem] overflow-hidden bg-white border border-black/10 mb-4">
+                  <img
+                    src={item.image}
+                    alt={item.title}
+                    className="w-full h-full object-cover group-hover:scale-105 transition duration-500"
+                  />
+                </div>
+                <div className="flex items-center justify-between">
+                  <div>
+                    <h3 className="text-lg font-semibold">{item.title}</h3>
+                    <p className="text-sm text-black/50">{item.category}</p>
+                  </div>
+                  <span className="text-xl">↗</span>
+                </div>
               </div>
             ))}
           </div>
@@ -111,40 +108,36 @@ export default function App() {
       </section>
 
       {/* About */}
-      <section className="px-6 md:px-16 py-20">
-        <div className="max-w-6xl mx-auto grid md:grid-cols-2 gap-10 items-center">
+      <section id="about" className="px-6 md:px-14 py-20 border-t border-black/10">
+        <div className="max-w-7xl mx-auto grid lg:grid-cols-2 gap-12 items-center">
           <div>
-            <p className="text-sm uppercase tracking-[0.25em] text-cyan-600 mb-3">About Us</p>
-            <h2 className="text-3xl md:text-4xl font-bold mb-6">Your Creative Partner for Design & Print</h2>
-            <p className="text-gray-600 leading-relaxed mb-4">
-              We are a creative design and printing company focused on helping brands build a strong visual presence. From logo design to premium print production, we combine creativity with technical precision.
-            </p>
-            <p className="text-gray-600 leading-relaxed">
-              Whether you need marketing materials, packaging, signage, or social media creatives, we turn your ideas into powerful visuals.
+            <p className="uppercase text-xs tracking-[0.3em] text-black/50 mb-3">About</p>
+            <h2 className="text-3xl md:text-5xl font-bold tracking-tight mb-6">
+              Designing identities <br />
+              that leave impact.
+            </h2>
+            <p className="text-black/60 leading-relaxed text-lg max-w-xl">
+              This template is built for designers who want a premium and modern portfolio presence. Add your own branding, project visuals, and print work to make it fully yours.
             </p>
           </div>
-          <div className="bg-gradient-to-br from-[#111827] to-[#7c3aed] text-white p-8 rounded-3xl shadow-xl">
-            <h3 className="text-2xl font-semibold mb-4">Why Choose Us?</h3>
-            <ul className="space-y-3 text-purple-100">
-              <li>• Creative & Custom Designs</li>
-              <li>• High Quality Printing Materials</li>
-              <li>• Fast Turnaround Time</li>
-              <li>• Affordable Pricing</li>
-              <li>• End-to-End Design Support</li>
-            </ul>
+
+          <div className="aspect-[4/3] rounded-[2rem] overflow-hidden bg-white border border-black/10">
+            <img src="/about-placeholder.jpg" alt="About" className="w-full h-full object-cover" />
           </div>
         </div>
       </section>
 
       {/* Contact */}
-      <section className="px-6 md:px-16 py-20 bg-gradient-to-r from-fuchsia-700 via-purple-700 to-indigo-800 text-white">
-        <div className="max-w-4xl mx-auto text-center">
-          <p className="text-sm uppercase tracking-[0.25em] text-pink-200 mb-3">Contact</p>
-          <h2 className="text-3xl md:text-5xl font-bold mb-6">Let’s Build Something Great</h2>
-          <p className="text-pink-100 mb-8 text-lg">
-            Need stunning visuals or premium print solutions? Let’s bring your brand to life.
+      <section id="contact" className="px-6 md:px-14 py-20 border-t border-black/10">
+        <div className="max-w-7xl mx-auto text-center">
+          <p className="uppercase text-xs tracking-[0.3em] text-black/50 mb-3">Contact</p>
+          <h2 className="text-4xl md:text-6xl font-bold tracking-tight mb-6">
+            Let’s build something <br /> beautiful.
+          </h2>
+          <p className="text-black/60 text-lg mb-8 max-w-2xl mx-auto">
+            Replace this section with your own email, WhatsApp, or business details and start showcasing your work professionally.
           </p>
-          <button className="px-8 py-3 rounded-2xl bg-white text-fuchsia-700 font-semibold hover:scale-105 transition shadow-xl">
+          <button className="px-8 py-3 bg-black text-white rounded-full text-sm font-medium hover:scale-105 transition">
             Contact Now
           </button>
         </div>
