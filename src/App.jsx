@@ -174,7 +174,7 @@ export default function App() {
       {/* Profile Intro Section */}
       <section id="contact"  className="px-6 md:px-14 py-16 bg-[#fdfaf5] border-b border-[#3a312b]/5">
         <div className="max-w-7xl mx-auto grid md:grid-cols-[0.8fr_1.2fr] gap-12 items-center">
-          <div className="relative aspect-[4/5] overflow-hidden rounded-2xl bg-[#ece6dd] shadow-[0_8px_30px_rgba(58,49,43,0.08)]">
+          <div className="relative overflow-hidden rounded-2xl bg-[#ece6dd] shadow-[0_8px_30px_rgba(58,49,43,0.08)]">
             <img
               src={heroImg}
               alt="Talha Moiz"
@@ -240,7 +240,7 @@ export default function App() {
                 <span className="p-2 bg-[#201916] text-[#f8f4ee] rounded-md">
                   <BsMailbox2 />
                 </span>
-                <a href="mailto:tmoaiz1@gmail.com">tmoaiz1@gmail.com</a>
+                <a href="mailto:tmoaiz1@gmail.com">Email</a>
               </div>
             </div>
           </div>
