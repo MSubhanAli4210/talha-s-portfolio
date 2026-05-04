@@ -262,7 +262,7 @@ export default function App() {
               A modern printing studio portfolio built to showcase premium DTF artwork, bold apparel graphics, and high-quality print solutions crafted for brands that demand strong visual impact.
             </p>
             <button className="px-7 py-3 bg-[#201916] text-[#f8f4ee] rounded-full text-sm font-medium hover:scale-105 transition">
-              View Projects
+              <a href="#work">View Projects</a>
             </button>
           </div>
 
