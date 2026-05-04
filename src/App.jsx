@@ -1,11 +1,15 @@
 import yellow from "./assets/images/yellow.jpg";
+import red from "./assets/images/red.jpg";
+import blue from "./assets/images/blue.jpg";
+import halfToneEffort from "./assets/images/halfToneEffort.jpg";
+// import { Instagram } from "lucide-react";
 
 export default function App() {
   const portfolioItems = [
     { title: "Brand Identity", category: "Branding", image: yellow },
-    { title: "Packaging Design", category: "Packaging", image: "/placeholder-2.jpg" },
-    { title: "Social Campaign", category: "Social Media", image: "/placeholder-3.jpg" },
-    { title: "Print Collateral", category: "Printing", image: "/placeholder-4.jpg" },
+    { title: "Packaging Design", category: "Packaging", image: red },
+    { title: "Social Campaign", category: "Social Media", image: blue },
+    { title: "Print Collateral", category: "Printing", image: halfToneEffort },
     { title: "Poster Design", category: "Advertising", image: "/placeholder-5.jpg" },
     { title: "Editorial Layout", category: "Magazine", image: "/placeholder-6.jpg" },
   ];
@@ -14,13 +18,44 @@ export default function App() {
     <div className="min-h-screen bg-[#f4f1ea] text-[#111111] font-sans">
       {/* Navbar */}
       <header className="w-full px-6 md:px-14 py-6 flex items-center justify-between sticky top-0 z-50 bg-[#f4f1ea]/90 backdrop-blur border-b border-black/10">
-        <h1 className="text-xl md:text-2xl font-bold tracking-tight">Talha Studio</h1>
+        <h1 className="text-xl md:text-2xl font-bold tracking-tight">Abhishek Studio</h1>
         <nav className="hidden md:flex items-center gap-8 text-sm font-medium uppercase tracking-wide">
           <a href="#work" className="hover:opacity-60 transition">Work</a>
           <a href="#about" className="hover:opacity-60 transition">About</a>
           <a href="#contact" className="hover:opacity-60 transition">Contact</a>
         </nav>
       </header>
+
+      {/* Profile Intro Section */}
+      <section className="px-6 md:px-14 py-16 bg-white border-b border-black/5">
+        <div className="max-w-7xl mx-auto grid md:grid-cols-[0.8fr_1.2fr] gap-12 items-center">
+          <div className="relative aspect-[4/5] overflow-hidden rounded-2xl bg-gray-100">
+            <img 
+              src="/your-profile-image.jpg" 
+              alt="Abhishek Pal" 
+              className="w-full h-full object-cover grayscale hover:grayscale-0 transition duration-700"
+            />
+          </div>
+          <div>
+            <h2 className="text-4xl md:text-5xl font-bold mb-6 tracking-tight">Hello, I'm Abhishek Pal!</h2>
+            <p className="text-lg text-black/70 leading-relaxed mb-6">
+              A passionate beginner graphic designer with a strong foundation built through self-learning and hands-on experience. I specialize in creating visually appealing and impactful designs that help bring ideas to life.
+            </p>
+            <p className="text-lg text-black/70 leading-relaxed mb-8">
+              I enjoy transforming simple ideas into clean, modern, and engaging designs, focusing on social media creatives and visual storytelling.
+            </p>
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 pt-6 border-t border-black/10">
+              <div className="flex items-center gap-3 text-sm font-medium">
+                {/* <Instagram /> */}
+                @abhishekdesign12
+              </div>
+              <div className="flex items-center gap-3 text-sm font-medium">
+                <span className="p-2 bg-black text-white rounded-md">✉</span> abhishekpal7090@gmail.com
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
 
       {/* Hero */}
       <section className="px-6 md:px-14 pt-14 pb-10">
@@ -77,7 +112,6 @@ export default function App() {
                     <h3 className="text-lg font-semibold leading-tight">{item.title}</h3>
                     <p className="text-sm text-black/45 mt-1">{item.category}</p>
                   </div>
-                  <span className="text-xl leading-none">↗</span>
                 </div>
               </div>
             ))}
@@ -88,7 +122,7 @@ export default function App() {
       {/* About */}
       <section id="about" className="px-6 md:px-14 py-20 border-t border-black/10">
         <div className="max-w-7xl mx-auto grid lg:grid-cols-2 gap-12 items-center">
-          <div className="rounded-[2rem] overflow-hidden border border-black/10 bg-white">
+          <div className="overflow-hidden border border-black/10 bg-white">
             <img src="/about-placeholder.jpg" alt="About" className="w-full h-full object-cover" />
           </div>
 
