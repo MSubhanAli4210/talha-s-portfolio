@@ -252,15 +252,14 @@ export default function App() {
         <div className="max-w-7xl mx-auto grid lg:grid-cols-[1.2fr_0.8fr] gap-10 items-center">
           <div>
             <p className="uppercase text-xs tracking-[0.35em] text-[#a34848] mb-5">
-              Graphic Designer • Printing Studio
+              Printing Studio
             </p>
             <h1 className="text-5xl md:text-7xl font-bold leading-[0.92] tracking-tight mb-6 max-w-3xl text-[#181512]">
               Creative <br />
-              Design Portfolio
+              Designs and Prints
             </h1>
             <p className="text-base md:text-lg text-[#5b4f47] leading-relaxed max-w-xl mb-8">
-              A modern visual portfolio crafted for designers who create bold
-              branding, premium print work, and striking visuals.
+              A modern printing studio portfolio built to showcase premium DTF artwork, bold apparel graphics, and high-quality print solutions crafted for brands that demand strong visual impact.
             </p>
             <button className="px-7 py-3 bg-[#201916] text-[#f8f4ee] rounded-full text-sm font-medium hover:scale-105 transition">
               View Projects
