@@ -268,7 +268,7 @@ export default function App() {
 
           <div className="overflow-hidden border border-[#3a312b]/10 bg-[#fffdfa] shadow-[0_8px_30px_rgba(58,49,43,0.06)]">
             <img
-              src={yellow}
+              src={red5}
               alt="Hero"
               className="w-full h-full object-cover"
             />
