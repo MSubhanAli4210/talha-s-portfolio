@@ -37,7 +37,7 @@ export default function App() {
             />
           </div>
           <div>
-            <h2 className="text-4xl md:text-5xl font-bold mb-6 tracking-tight">Hello, I'm Abhishek Pal!</h2>
+            <h2 className="text-4xl md:text-5xl font-bold mb-6 tracking-tight">Hello, I'm Talha Moiz!</h2>
             <p className="text-lg text-black/70 leading-relaxed mb-6">
               A passionate beginner graphic designer with a strong foundation built through self-learning and hands-on experience. I specialize in creating visually appealing and impactful designs that help bring ideas to life.
             </p>
